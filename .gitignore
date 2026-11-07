@@ -1,0 +1,10 @@
+# Large media files
+1107.mov
+*.mov
+*.mp4
+
+# Development & scratch files
+scratch/
+.sharrowkin/
+.agents/
+node_modules/
