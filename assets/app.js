@@ -46,8 +46,21 @@
   }
 
   if (burger) {
-    burger.addEventListener('click', function () {
+    burger.addEventListener('click', function (e) {
+      e.stopPropagation();
       setMenu(!nav.classList.contains('is-open'));
+    });
+
+    document.addEventListener('click', function (e) {
+      if (nav && nav.classList.contains('is-open') && !nav.contains(e.target)) {
+        setMenu(false);
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav && nav.classList.contains('is-open')) {
+        setMenu(false);
+      }
     });
   }
 
