@@ -154,5 +154,30 @@ window.PROJECTS = [
     links: [
       { label: 'Пост в канале', href: 'https://t.me/inexcdemo/24' }
     ]
+  },
+  {
+    slug: 'vidshrink',
+    title: 'VidShrink',
+    kind: 'Десктоп',
+    summary: 'Сжатие видео под точный лимит размера: для мессенджеров, Discord или почты с аппаратным ускорением.',
+    lead: 'Десктопное приложение для Windows и Linux. Кидаешь видео, выбираешь пресет или лимит в МБ — программа сама считает нужный битрейт и точно укладывает файл в размер.',
+    image: 'assets/projects/vidshrink-1.jpg',
+    gallery: [
+      'assets/projects/vidshrink-1.jpg'
+    ],
+    stack: ['C#', '.NET 8', 'Avalonia UI', 'FFmpeg'],
+    highlights: [
+      'Расчёт битрейта по длительности и лимиту, двухпроходное кодирование для точного попадания в размер',
+      'Поддержка кодеков H.264, H.265, AV1, VP9',
+      'Аппаратное ускорение: NVENC, QuickSync, AMD AMF на Windows, NVENC и VAAPI на Linux',
+      'Очередь из нескольких файлов, обрезка по времени, выбор разрешения, управление звуком',
+      'Автоматический повтор с пониженным битрейтом, если результат чуть больше лимита',
+      'Готовые установщики: инсталлятор под Windows и установочный скрипт с иконкой под Linux'
+    ],
+    detail: 'VidShrink написан на C# и .NET 8 с кроссплатформенным интерфейсом на Avalonia UI. Кодирование выполняется через FFmpeg с автоматическим определением доступного GPU-ускорения (Nvidia, Intel, AMD).',
+    links: [
+      { label: 'Код на GitHub', href: 'https://github.com/Inexc/VidShrink' },
+      { label: 'Пост в канале', href: 'https://t.me/inexcdemo/26' }
+    ]
   }
 ];
