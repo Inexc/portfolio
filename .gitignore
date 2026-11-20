@@ -8,3 +8,6 @@ scratch/
 .sharrowkin/
 .agents/
 node_modules/
+
+# generated promo media
+promo/
